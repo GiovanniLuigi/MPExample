@@ -145,7 +145,9 @@ extension MPHelper: MCSessionDelegate {
     }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
-        receiverDelegate?.receive(data: data, from: peerID)
+        DispatchQueue.main.async {
+            self.receiverDelegate?.receive(data: data, from: peerID)
+        }
     }
     
     func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {

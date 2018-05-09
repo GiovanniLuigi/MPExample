@@ -16,6 +16,7 @@ class ViewController: UIViewController, ReceiverDelegate {
         
         
         MPHelper.shared.receiverDelegate = self
+        MPHelper.shared.prepare(name: "Giovanni")
         MPHelper.shared.startBrowsing()
         MPHelper.shared.startAdvertesing()
     }

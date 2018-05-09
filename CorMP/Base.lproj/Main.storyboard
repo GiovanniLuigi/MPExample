@@ -22,11 +22,17 @@
                                 <rect key="frame" x="172" y="255" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Red"/>
+                                <connections>
+                                    <action selector="tapRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0G-J6-2Lm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPE-Fn-DKg">
                                 <rect key="frame" x="166" y="332" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Green"/>
+                                <connections>
+                                    <action selector="tapGreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z56-OK-tox"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
